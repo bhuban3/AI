@@ -1,4 +1,4 @@
-% Gender facts
+
 male(mamun).
 male(nazmul).
 
@@ -9,7 +9,6 @@ female(sokina).
 parents(mamun, nazmul, sokina).
 parents(shama, nazmul, sokina).
 
-% Sister relationship
 sisterof(X, Y) :-
     female(X),
     parents(X, F, M),
@@ -17,6 +16,6 @@ sisterof(X, Y) :-
     X \= Y.
 
 
-
+Queries:
 ?- sisterof(shama, mamun).
 ?- sisterof(X, mamun).
